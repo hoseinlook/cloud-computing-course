@@ -8,8 +8,8 @@ KIND_BIDEN = "Joe_Biden"
 KIND_TRUMP = "Donald_Trump"
 KIND_BOTH = "Both_Candidates"
 
-biden_keywords = ['#biden', "#jobiden", "biden", "joebiden"]
-trump_keywords = ['#trump', "#donaldtrump", "trump", "donaldtrump"]
+biden_keywords = ["#Biden", "#JoeBiden"]
+trump_keywords = ['#Trump', "#DonaldTrump"]
 SEPARATOR = '|---|'
 
 
@@ -23,7 +23,7 @@ def mapper(cols: list) -> Union[str, None]:
     """
 
     created_at, tweet_id, tweet, likes, retweet_count, source, user_id, username, user_screen_name, user_description, user_join_date, user_followers_count, user_location, lat, lon, city, country, continent, state, state_code, collected_at = cols
-    tweet = tweet.lower()
+    tweet = tweet
 
     trump_condition = any([item in tweet for item in trump_keywords])
     biden_condition = any([item in tweet for item in biden_keywords])
