@@ -1,0 +1,4 @@
+################ likes retweets Twitter Web App Twitter for Android Twitter for iPhone	
+Both_Candidates 204750 78843 17541 7916 9479	
+Donald_Trump 370451 126000 24885 15396 17710	
+Joe_Biden 801355 267920 24737 14031 21786	
